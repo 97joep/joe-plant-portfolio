@@ -158,6 +158,12 @@ a:hover {
     padding: 16px;
     overflow-y: scroll;
     min-height: 100%;
+    overflow-x: hidden;
+}
+.content--item,
+.contact-content--links {
+    max-width: 100%;
+    max-height: 100%;
 }
 .content--item.active {
     opacity: 1;
@@ -190,6 +196,7 @@ a:hover {
     font-size: 32px;
 }
 .project--container {
+    max-width: 100%;
     width: 100%;
 }
 .project--info {
@@ -225,6 +232,9 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+.contact-content--links a {
+    line-break: anywhere;
 }
 .back-button {
     position: absolute;
