@@ -1,7 +1,7 @@
 {
     "home": {
         "description": ["From Stourbridge, UK.", "I completed Harvard X's intro course on computer science because I wanted to learn basic web design, in order to avoid paying monthly fees for apps that implement UI/UX features onto my Shopify stores.", "But since then I have continued to explore web design further, and now I want to make building unique and inspiring web experiences my full-time job (I know it's ironic given the page you're currently looking at)."],
-        "stack": ["HTML", "CSS", "JavaScript", "Liquid", "TypeScript", "GROQ"],
+        "stack": ["HTML", "CSS", "JavaScript", "Liquid", "SQL", "TypeScript", "GROQ"],
         "frameworks": ["Next.js", "React", "Tailwind CSS"],
         "backend": ["Shopify", "Sanity"],
         "cv": {
@@ -19,7 +19,7 @@
             "link": "https://pakdluggage.com/",
             "image": "assets/pakd-luggage-screenshot.png",
             "info": "A full front-end build for a small bag & luggage Shopify store named PAKD. The idea was to provide a blank canvas to platform for the unique aesthetics of the brand's products, whilst introducing subtle branding cues (mainly the rounded squares). This project is still in progress, with some content & pages (such as contact, account & checkout) awaiting completion.",
-            "github": "https://github.com/97joep/pakd-luggage"
+            "github": "private"
         },
         {
             "title": "Shopify - Cross-Sell Product Grid",
