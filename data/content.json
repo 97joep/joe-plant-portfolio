@@ -1,0 +1,103 @@
+{
+    "home": {
+        "description": ["From Stourbridge, UK.", "I completed Harvard X's intro course on computer science because I wanted to learn some basic web design, in order to avoid paying monthly fees for apps that implement UI/UX features onto my Shopify stores.", "But since then I have continued to explore web design further, and now I want to make building unique and inspiring web experiences my full-time job (I know it's ironic given the page you're currently looking at)."],
+        "stack": ["HTML", "CSS", "JavaScript", "Liquid", "TypeScript", "GROQ"],
+        "frameworks": ["Next.js", "React", "Tailwind CSS"],
+        "backend": ["Shopify", "Sanity"],
+        "cv": {
+            "name": "My CV",
+            "url": "assets/cv-base.pdf"
+        }
+    },
+    "navigation": ["Home", "Projects", "Info", "FAQs"],
+    "projects": [
+        {
+            "title": "Shopify - PAKD Webstore",
+            "handle": "pakd-webstore",
+            "type": "Full-build",
+            "status": "in-progress",
+            "link": "https://pakdluggage.com/",
+            "image": "assets/pakd-luggage-screenshot.png",
+            "info": "A full front-end build for a small bag & luggage Shopify store named PAKD. The idea was to provide a blank canvas to platform for the unique aesthetics of the brand's products, whilst introducing subtle branding cues (mainly the rounded squares). This project is still in progress, with some content & pages (such as contact, account & checkout) awaiting completion.",
+            "github": "https://github.com/97joep/pakd-luggage"
+        },
+        {
+            "title": "Shopify - Cross-Sell Product Grid",
+            "handle": "cross-sell-product-grid",
+            "type": "Snippet",
+            "link": "https://allpaws.shop/products/tennis-toss-2#pp-cross-sell-tennis-toss-2",
+            "image": "assets/cross-sell-grid-screenshot.png",
+            "info": "A cross sell grid built for Shopify's 'Dawn' theme, applicable to both product pages and carts, increasing average order value. The displayed product is fetched from a product metafield (based on certain conditions if applied to the cart) and applied to the code found within the repository.",
+            "github": "https://github.com/97joep/cross-sell-product-grid"
+        },
+        {
+            "title": "Shopify - Cart Drawer",
+            "handle": "cart-drawer",
+            "type": "Section",
+            "link": "https://allpaws.shop/products/tennis-toss-2",
+            "image": "assets/cart-drawer-screenshot.png",
+            "info": "A custom made cart drawer, specifically hosting item-dependent 'cart rewards' as well as item-dependent cross sells.",
+            "github": "private",
+            "note": "Add an item to the cart!"
+        },
+        {
+            "title": "Shopify - FAQs Page",
+            "handle": "faqs-page",
+            "type": "Page",
+            "link": "https://jjourney.shop/pages/faqs",
+            "image": "assets/faqs-page-screenshot.png",
+            "info": "A page of FAQs, with scroll-to categorisation and search functionality.",
+            "github": "private"
+        },
+        {
+            "title": "Shopify - Product Gallery & Variant Controls",
+            "handle": "product-gallery-variant-control",
+            "type": "Section",
+            "link": "https://allpaws.shop/products/harness-walk-kit#variant-controls--harness-walk-kit",
+            "image": "assets/product-gallery-variant-controls-screenshot.png",
+            "info": "A custom product gallery and variant controls, where the product gallery displays images based on the currently selected variant. (it also goes without saying, but the variant controls smoothly update all related buy buttons on the product page)",
+            "github": "https://github.com/97joep/product-gallery-with-custom-variant-controls"
+        },
+        {
+            "title": "Shopify - Complimenting Products Slider",
+            "handle": "complimenting-products-slider",
+            "type": "Section",
+            "link": "https://allpaws.shop/products/tennis-toss-2#complimenting-products",
+            "image": "assets/complimenting-products-slider.png",
+            "info": "A slider of complimenting products with add-to-cart & variant selection functionality, displayed on the product page, where the complimenting products are fetched from a product metafield.",
+            "github": "https://github.com/97joep/complimenting-products"
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Where can I find your code?",
+            "answer": "I have a Github account but alot of the projects are private repositories"
+        },
+        {
+            "question": "How did you get into web design?",
+            "answer": "Harvard X's CS50 course, then making Shopify sections, eventually moving to full themes, and now more traditional front-end development - learning as I go from experts, webpages, books, etc."
+        },
+        {
+            "question": "Do you work solely on Shopify?",
+            "answer": "I began on Shopify building indiviudal 'Custom Liquid' snippets, eventually moving to full theme builds. Now I have branched out to building portfolio websites using different frameworks."
+        },
+        {
+            "question": "What did you use to make this website?",
+            "answer": "This website is vanilla - I'm making a new portfolio website using NextJS, Tailwind & Sanity currently."
+        }
+    ],
+    "contact": [
+        {
+            "title": "GitHub",
+            "link": "https://github.com/97joep"
+        },
+        {
+            "title": "LinkedIn",
+            "link": ""
+        },
+        {
+            "title": "jjnplnt.freelance@gmail.com",
+            "link": "mailto:jjnplnt.freelance@gmail.com"
+        }
+    ]
+}

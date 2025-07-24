@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+        <!-- Page Title & Meta Description -->
+        <title>Creative Front-End Developer | Your Name</title>
+        <meta name="description" content="Portfolio of Your Name – a front-end developer specializing in custom Shopify themes using Liquid, HTML, CSS, and JavaScript." />
+      
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://yourusername.github.io/my-portfolio/" />
+      
+        <!-- Open Graph Meta (for Facebook, LinkedIn, etc.) -->
+        <meta property="og:title" content="Shopify Front-End Developer | Your Name" />
+        <meta property="og:description" content="Custom Shopify storefronts and themes built by Your Name using Liquid, HTML, CSS, and JavaScript." />
+        <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg" />
+        <meta property="og:url" content="https://yourusername.github.io/my-portfolio/" />
+        <meta property="og:type" content="website" />
+      
+        <!-- Twitter Card Meta -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@yourtwitterhandle" />
+        <meta name="twitter:creator" content="@yourtwitterhandle" />
+        <meta name="twitter:title" content="Shopify Front-End Developer | Your Name" />
+        <meta name="twitter:description" content="Custom Shopify storefronts and themes built by Your Name using Liquid, HTML, CSS, and JavaScript." />
+        <meta name="twitter:image" content="https://yourdomain.com/assets/og-image.jpg" />
+      
+        <!-- JSON-LD Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Your Name",
+            "url": "https://yourusername.github.io/my-portfolio/",
+            "sameAs": [
+                "https://github.com/yourusername",
+                "https://linkedin.com/in/yourlinkedin",
+                "https://twitter.com/yourtwitterhandle",
+                "https://instagram.com/yourinstagram",
+                "https://www.upwork.com/freelancers/yourupworkprofile",
+                "https://www.fiverr.com/yourfiverrhandle"
+            ],
+            "jobTitle": "Front-End Developer",
+            "description": "Shopify front-end developer specializing in custom themes using Liquid, HTML, CSS, and JavaScript.",
+            "knowsAbout": ["Shopify", "Liquid", "HTML", "CSS", "JavaScript", "Ecommerce"],
+            "email": "mailto:your@email.com"
+        }
+        </script>
+      
+        <!-- Favicon -->
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+      
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/style.css" />
+      
+        <!-- Optional: Font Awesome (for social icons) -->
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+        <!-- JavaScript files -->
+        <script src="js/script.js" defer></script>
+        <script src="js/home.js" defer></script>
+        <script src="js/projects.js" defer></script>
+        <script src="js/faqs.js" defer></script>
+        <script src="js/contact.js" defer></script>
+
+        <!-- Markdown converter -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+        <!--Font import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="page-grid">
+                <div class="page-grid--item intro-screen" id="intro">
+                    <div class="page-grid--intro">
+                        <h1>JOE PLANT</h1>
+                        <p>WEB DESIGNER & DEVELOPER</p>
+                        <p style="color:lightgray;">(TEMPORARY PORTFOLIO)</p>
+                        <button id="intro-button">EXPLORE</button>
+                    </div>
+                </div>
+                <div class="page-grid--item" id="nav">
+                    <div class="page-grid--nav">
+                        <button class="nav-item capitalise" data-target="home-content">ABOUT ME</button>
+                        <button class="nav-item capitalise" data-target="project-content">PROJECTS</button>
+                        <button class="nav-item capitalise" data-target="faq-content">FAQs</button>
+                        <button class="nav-item capitalise" data-target="contact-content">CONTACT INFO</button>
+                    </div>
+                </div>
+                <div class="page-grid--item" id="content">
+                    <div class="page-grid--content">
+                        <div class="content--item" id="home-content" data-title="ABOUT ME"></div>
+                        <div class="content--item" id="project-content" data-title="PROJECTS"></div>
+                        <div class="content--item" id="faq-content" data-title="FAQs"></div>
+                        <div class="content--item" id="contact-content" data-title="CONTACT INFO"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</hmtl>

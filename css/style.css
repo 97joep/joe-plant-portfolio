@@ -1,0 +1,241 @@
+/* global styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, p, a, button, span {
+    margin: 0;
+    font-family: 'Roboto';
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+button:hover {
+    color: gray;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: lightgray;
+}
+.capitalise {
+  text-transform: uppercase;
+}
+/* specific styles */
+.page-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.page-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "intro content"
+        "nav content";
+    grid-template-rows: 50% 50%;
+}
+.page-grid--item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+#intro {
+    grid-area: intro;
+}
+#intro.intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: 10000;
+    transition: all 1s ease;
+}
+#intro.intro-screen button {
+    opacity: 0;
+    pointer-events: none;
+}
+#intro.intro-animate-in {
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+#intro-button {
+    opacity: 1;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+#nav {
+    grid-area: nav;
+}
+#content {
+    grid-area: content;
+}
+.page-grid--intro,
+.page-grid--nav,
+.content--item,
+.home-content {
+    display: flex;
+    flex-direction: column;
+}
+.page-grid--intro,
+.page-grid--nav {
+    gap: 16px;
+    text-align: center;
+    align-items: center;
+}
+.content--item,
+.home-content {
+    gap: 32px;
+    text-align: end;
+    align-items: end;
+}
+.page-grid--nav {
+    position: relative;
+    padding: 16px;
+    opacity: 0;
+    transform: translateY(100%);
+    pointer-events: none;
+    transform: translateY(100%);
+    transition: opacity 1s ease, transform 0.6s ease;
+}
+.page-grid--nav.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+.page-grid--content,
+.content--item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.page-grid--content {
+    position: relative;
+}
+/* nav items */
+.nav-item {
+    font-weight: bold;
+}
+/* content items */
+.content--item {
+    display: flex;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease, transform 0.6s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    pointer-events: none;
+    padding: 16px;
+    overflow-y: scroll;
+    min-height: 100%;
+}
+.content--item.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+/* home content */
+.home-content {
+    min-height: 100%;
+    justify-content: space-between;
+}
+.home-content--intro {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.home-content--stack {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    max-height: 100%;
+}
+.home-content--skills {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+/* project content */
+.project--title {
+    font-size: 32px;
+}
+.project--container {
+    width: 100%;
+}
+.project--info {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 16px;
+    align-items: center;
+}
+.project--github.private {
+    pointer-events: none;
+    color: lightgray;
+}
+.project--status {
+    color: lightcoral;
+}
+.project--details {
+    text-align: center;
+}
+.project--collapsible-row {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.project--collapsible-row--content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+/* contact content */
+.contact-content--links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.back-button {
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    color: black;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0.9;
+}
+.back-button p {
+    text-decoration: underline;
+}
