@@ -73,9 +73,7 @@ async function toggleDetails(event) {
 
     await setRowHeight(detailsContainer, isOpening);
 
-    setTimeout(() => {
-        target.style.pointerEvents = 'all';
-    }, 3000);
+    target.style.pointerEvents = '';
 }
 
 function setRowHeight(content, isOpening) {
