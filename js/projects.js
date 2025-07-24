@@ -72,7 +72,10 @@ async function toggleDetails(event) {
     }
 
     await setRowHeight(detailsContainer, isOpening);
-    target.disabled = false;
+
+    setTimeout(() => {
+        target.disabled = false;
+    }, 3000);
 }
 
 function setRowHeight(content, isOpening) {
