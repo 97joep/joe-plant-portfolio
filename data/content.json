@@ -6,7 +6,7 @@
         "backend": ["Shopify", "Sanity"],
         "cv": {
             "name": "My CV",
-            "url": "assets/joe-plant-cv--2025.08.24.pdf"
+            "url": "assets/joe-plant-cv--2025.07.24.pdf"
         }
     },
     "navigation": ["Home", "Projects", "Info", "FAQs"],
