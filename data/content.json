@@ -1,12 +1,12 @@
 {
     "home": {
-        "description": ["From Stourbridge, UK.", "I completed Harvard X's intro course on computer science because I wanted to learn basic web design, in order to avoid paying monthly fees for apps that implement UI/UX features onto my Shopify stores.", "But since then I have continued to explore web design further, and now I want to make building unique and inspiring web experiences my full-time job (I know it's ironic given the page you're currently looking at)."],
+        "description": ["From Stourbridge, UK.", "I completed Harvard X's intro course on computer science because I wanted to learn some basic web design, in order to avoid paying monthly fees for apps that implement UI/UX features onto my Shopify stores.", "But since then I have continued to explore web design further, and now I want to make building unique and inspiring web experiences my full-time job (I know it's ironic given the page you're currently looking at)."],
         "stack": ["HTML", "CSS", "JavaScript", "Liquid", "TypeScript", "GROQ"],
         "frameworks": ["Next.js", "React", "Tailwind CSS"],
         "backend": ["Shopify", "Sanity"],
         "cv": {
             "name": "My CV",
-            "url": "assets/cv-base.pdf"
+            "url": "assets/joe-plant-cv--2025.08.24.pdf"
         }
     },
     "navigation": ["Home", "Projects", "Info", "FAQs"],
