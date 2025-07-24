@@ -57,7 +57,7 @@ function renderProjects(projects) {
 
 async function toggleDetails(event) {
     const target = event.currentTarget;
-    target.disabled = true;
+    target.style.pointerEvents = 'none';
     const projectsContainer = target.closest('.project--container');
     const detailsContainer = projectsContainer.querySelector('.project--collapsible-row');
 
@@ -74,7 +74,7 @@ async function toggleDetails(event) {
     await setRowHeight(detailsContainer, isOpening);
 
     setTimeout(() => {
-        target.disabled = false;
+        target.style.pointerEvents = 'all';
     }, 3000);
 }
 
