@@ -6,7 +6,7 @@ function renderContact(contact) {
         const contactLinksContainer = document.querySelector('.contact-content--links');
         if (contactLinksContainer) {
             contact.forEach((item) => {
-                contactLinksContainer.innerHTML += `<a href="${item.link}" target"_blank" class="capitalise">${item.title}</a>`;
+                contactLinksContainer.innerHTML += `<a href="${item.link}" target="_blank" class="capitalise">${item.title}</a>`;
             });
         }
     }
