@@ -135,6 +135,7 @@ function setRowHeight(content, isOpening) {
 function openProjectMessage(e, message) {
     // stop link's default behaviour
     e.preventDefault();
+    const projectLink = e.currentTarget;
 
     // display message
     message.classList.add('open');
