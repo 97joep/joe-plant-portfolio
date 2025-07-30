@@ -18,8 +18,9 @@
             "status": "in-progress",
             "link": "https://pakdluggage.com/",
             "image": "assets/pakd-luggage-screenshot.png",
-            "info": "A full front-end build for a small bag & luggage Shopify store named PAKD. The idea was to provide a blank canvas to platform for the unique aesthetics of the brand's products, whilst introducing subtle branding cues (mainly the rounded squares). This project is still in progress, with some content & pages (such as contact, account & checkout) awaiting completion.",
-            "github": "private"
+            "info": "A full front-end build for a small bag & luggage Shopify store named PAKD. The idea was to provide a blank canvas to platform the unique aesthetics of the brand's products, whilst introducing subtle branding cues (mainly the rounded squares). This store is currently password protected, but ready for deployment.",
+            "github": "private",
+            "message": "The store password is: 'ugaugi'. Click the link again to continue."
         },
         {
             "title": "Shopify - Cross-Sell Product Grid",

@@ -4,7 +4,8 @@ function renderProjects(projects) {
         projects.forEach((project) => {
             projectsContainer.innerHTML += `
                 <div class="project--container">
-                    <a href="${project.link}" target="_blank" class="project--title capitalise">${project.title}</a>
+                    <a href="${project.link}" id="${project.handle}--link" target="_blank" class="project--title capitalise" data-state="off">${project.title}</a>
+                    <div class="project--message--container capitalise"></div>
                     <div class="project--info">
                         <button class="project--details">DETAILS</button>
                         <a href="${project.github}" target="_blank" class="project--github" id="${project.handle}--github"></a>
@@ -40,6 +41,34 @@ function renderProjects(projects) {
                 const projectInfo = document.querySelector('.project--info');
                 projectInfo.innerHTML += `<p class="project--status">${project.status}</p>`;
                 console.log(projectInfo);
+            }
+
+            if (project.message) {
+                const projectLink = document.querySelector(`#${project.handle}--link`);
+                const projectLinkState = projectLink.dataset.state;
+                if (!projectLink) return;
+
+                // render project message
+                const projectContainer = projectLink.closest('.project--container');
+                const projectMessageContainer = projectContainer.querySelector('.project--message--container');
+                projectMessageContainer?.innerHTML = `
+                    <p>${project.message}</p>
+                    <button>X</button>
+                `;
+
+                const messageClose = projectMessageContainer.querySelector('button');
+                messageClose?.addEventListener('click', () => {
+                    closeProjectMessage(projectMessageContainer);
+                })
+
+                projectLink.addEventListener('click', (e) => {
+                    if (projectLinkState === 'off') {
+                        openProjectMessage(e, projectMessageContainer);
+                    } else if (projectLinkState === 'on') {
+                        closeProjectMessage(projectMessageContainer);
+                        projectLink.dataset.state = 'off';
+                    }
+                })
             }
         });
 
@@ -101,4 +130,19 @@ function setRowHeight(content, isOpening) {
             });
         }
     });
+}
+
+function openProjectMessage(e, message) {
+    // stop link's default behaviour
+    e.preventDefault();
+
+    // display message
+    message.classList.add('open');
+
+    // allow link's default behaviour on 2nd click
+    projectLink.dataset.state = 'on';
+}
+
+function closeProjectMessage(message) {
+    message.classList.remove('open');
 }

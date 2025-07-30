@@ -195,10 +195,25 @@ a:hover {
 /* project content */
 .project--title {
     font-size: 32px;
+    position: relative;
 }
 .project--container {
     max-width: 100%;
     width: 100%;
+}
+.project--message--container {
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+    color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+}
+.project--message--container.open {
+    height: auto;
+    pointer-events: all;
 }
 .project--info {
     display: flex;
