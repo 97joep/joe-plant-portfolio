@@ -237,6 +237,12 @@ a:hover {
 .contact-content--links a {
     line-break: anywhere;
 }
+.contact-content--link {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+}
 .back-button {
     position: absolute;
     top: -25%;
