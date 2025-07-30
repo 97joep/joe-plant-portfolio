@@ -196,23 +196,44 @@ a:hover {
 .project--title {
     font-size: 32px;
     position: relative;
+    width: auto;
+    pointer-events: none;
+}
+.project--title span {
+    pointer-events: auto;
+}
+.project--title span:hover {
+    color: gray;
 }
 .project--container {
     max-width: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.project--message--container, .project--github--message--container {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
 }
 .project--message--container {
-    height: 0;
     pointer-events: none;
-    overflow: hidden;
-    color: lightcoral;
+}
+.project--message--container p, .project--github--message p, .project--github--message a {
+    color: goldenrod;
+}
+.project--github--message--content, .project--message--content {
+    gap: 16px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 16px;
+    padding: 16px;
 }
-.project--message--container.open {
-    height: auto;
+.project--github--message a {
+    text-decoration: underline;
+}
+.project--message--container.open, .project--github--message.open {
     pointer-events: all;
 }
 .project--info {
@@ -222,7 +243,7 @@ a:hover {
     gap: 16px;
     align-items: center;
 }
-.project--github.private {
+.project--github.unavailable {
     pointer-events: none;
     color: lightgray;
 }

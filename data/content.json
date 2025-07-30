@@ -15,12 +15,12 @@
             "title": "Shopify - PAKD Webstore",
             "handle": "pakd-webstore",
             "type": "Full-build",
-            "status": "in-progress",
             "link": "https://pakdluggage.com/",
             "image": "assets/pakd-luggage-screenshot.png",
             "info": "A full front-end build for a small bag & luggage Shopify store named PAKD. The idea was to provide a blank canvas to platform the unique aesthetics of the brand's products, whilst introducing subtle branding cues (mainly the rounded squares). This store is currently password protected, but ready for deployment.",
-            "github": "private",
-            "message": "The store password is: 'ugaugi'. Click the link again to continue."
+            "github": "https://github.com/97joep/pakd-luggage",
+            "githubState": "private",
+            "message": ["The store password is: 'ugaugi'", "Click the link again to continue."]
         },
         {
             "title": "Shopify - Cross-Sell Product Grid",
@@ -38,7 +38,7 @@
             "link": "https://allpaws.shop/products/tennis-toss-2",
             "image": "assets/cart-drawer-screenshot.png",
             "info": "A custom made cart drawer, specifically hosting item-dependent 'cart rewards' as well as item-dependent cross sells.",
-            "github": "private",
+            "githubState": "unavailable",
             "note": "Add an item to the cart!"
         },
         {
@@ -48,7 +48,7 @@
             "link": "https://jjourney.shop/pages/faqs",
             "image": "assets/faqs-page-screenshot.png",
             "info": "A page of FAQs, with scroll-to categorisation and search functionality.",
-            "github": "private"
+            "githubState": "unavailable"
         },
         {
             "title": "Shopify - Product Gallery & Variant Controls",
@@ -94,7 +94,7 @@
         },
         {
             "title": "LinkedIn",
-            "link": "www.linkedin.com/in/joe-jon-plant"
+            "link": "https://www.linkedin.com/in/joe-jon-plant/"
         },
         {
             "title": "jjnplnt.freelance@gmail.com",
