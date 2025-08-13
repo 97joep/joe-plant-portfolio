@@ -23,6 +23,15 @@
             "message": ["The store password is: 'ugaugi'", "Click the link again to continue."]
         },
         {
+            "title": "Corphics",
+            "handle": "corphics",
+            "type": "Full-build",
+            "link": "https://corphics.uk/",
+            "info": "A landing page built for a freelancing graphic designer. The intention of the page is to create a simple way to allow users to contact the designer, whilst providing a taste of the quality of work said designer can provide. The underlying intention of the project is to eventually expand into a multi-page website - therefore the initial page is built using Next.js & Sanity CMS, providing a clear base to expand from.",
+            "github": "https://github.com/97joep/corphics",
+            "githubState": "private"
+        },
+        {
             "title": "Shopify - Cross-Sell Product Grid",
             "handle": "cross-sell-product-grid",
             "type": "Snippet",
